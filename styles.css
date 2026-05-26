@@ -103,6 +103,12 @@ button {
     url("assets/systementor-zoo-hero.png") center / cover;
 }
 
+@media (min-width: 821px) and (prefers-reduced-motion: no-preference) {
+  .hero {
+    background-attachment: scroll, fixed;
+  }
+}
+
 .hero-overlay {
   max-width: 660px;
 }
