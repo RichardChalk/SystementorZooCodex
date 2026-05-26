@@ -93,19 +93,45 @@ button {
 }
 
 .hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   min-height: min(760px, calc(100vh - 5rem));
   display: grid;
   align-items: center;
   padding: clamp(4rem, 9vw, 7rem) clamp(1rem, 4vw, 4rem);
   color: var(--white);
+}
+
+.hero::before,
+.hero::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+}
+
+.hero::before {
+  z-index: -2;
   background:
-    linear-gradient(90deg, rgba(18, 38, 25, 0.82), rgba(18, 38, 25, 0.45), rgba(18, 38, 25, 0.12)),
     url("assets/systementor-zoo-hero.png") center / cover;
+  transform: translateY(var(--hero-parallax, 0));
+  transition: transform 0.08s linear;
+  will-change: transform;
+}
+
+.hero::after {
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    rgba(18, 38, 25, 0.82),
+    rgba(18, 38, 25, 0.45),
+    rgba(18, 38, 25, 0.12)
+  );
 }
 
 @media (min-width: 821px) and (prefers-reduced-motion: no-preference) {
-  .hero {
-    background-attachment: scroll, fixed;
+  .hero::before {
+    inset: -5% 0;
   }
 }
 
@@ -453,9 +479,10 @@ textarea:focus {
 
   .hero {
     min-height: 680px;
-    background:
-      linear-gradient(180deg, rgba(18, 38, 25, 0.82), rgba(18, 38, 25, 0.48)),
-      url("assets/systementor-zoo-hero.png") center / cover;
+  }
+
+  .hero::after {
+    background: linear-gradient(180deg, rgba(18, 38, 25, 0.82), rgba(18, 38, 25, 0.48));
   }
 
   .info-grid,
