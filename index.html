@@ -56,6 +56,36 @@
             <p>Green paths, calm rest areas, and clear signs make the park simple to explore.</p>
           </article>
         </div>
+
+        <aside class="weather-card" aria-labelledby="weather-title">
+          <div class="weather-copy">
+            <p class="eyebrow">Today's park weather</p>
+            <h3 id="weather-title">Plan for Stockholm</h3>
+            <p id="weatherStatus">Live weather appears here when your OpenWeatherMap API key is added.</p>
+          </div>
+
+          <div class="weather-display" aria-live="polite">
+            <div class="weather-icon-wrap">
+              <img
+                class="weather-icon"
+                id="weatherIcon"
+                src=""
+                alt=""
+                hidden
+              />
+              <div class="weather-symbol" id="weatherSymbol" aria-hidden="true">
+                <span class="weather-sun"></span>
+                <span class="weather-cloud"></span>
+                <span class="weather-rain rain-one"></span>
+                <span class="weather-rain rain-two"></span>
+                <span class="weather-rain rain-three"></span>
+              </div>
+            </div>
+            <p class="weather-temp" id="weatherTemp">--&deg;C</p>
+            <p class="weather-location" id="weatherLocation">Stockholm</p>
+            <p class="weather-description" id="weatherDescription">Weather loading soon</p>
+          </div>
+        </aside>
       </section>
 
       <section class="experience-section" id="experiences" aria-labelledby="experience-title">

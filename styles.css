@@ -230,6 +230,132 @@ h3 {
   border-top: 5px solid var(--leaf);
 }
 
+.weather-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(230px, 300px);
+  gap: clamp(1.25rem, 4vw, 2.5rem);
+  align-items: center;
+  margin-top: 1.25rem;
+  padding: clamp(1.35rem, 4vw, 2.2rem);
+  color: var(--white);
+  background:
+    linear-gradient(135deg, rgba(33, 78, 52, 0.96), rgba(63, 143, 95, 0.88)),
+    var(--forest);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.weather-copy h3,
+.weather-copy p,
+.weather-display p {
+  margin-bottom: 0;
+}
+
+.weather-copy h3 {
+  color: var(--white);
+  font-size: clamp(1.65rem, 3vw, 2.35rem);
+}
+
+.weather-copy .eyebrow {
+  color: var(--sun);
+}
+
+.weather-copy p:not(.eyebrow) {
+  max-width: 520px;
+  margin-top: 0.75rem;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.weather-display {
+  display: grid;
+  justify-items: center;
+  padding: 1.2rem;
+  color: var(--forest);
+  background: var(--cream);
+  border-radius: 8px;
+}
+
+.weather-icon-wrap {
+  position: relative;
+  width: 6.5rem;
+  height: 5.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.weather-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.weather-symbol {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.weather-sun {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.45rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  background: var(--coral);
+  border-radius: 50%;
+}
+
+.weather-cloud {
+  position: absolute;
+  left: 0.6rem;
+  bottom: 1.45rem;
+  width: 4.75rem;
+  height: 2.2rem;
+  background: var(--white);
+  border-radius: 999px;
+  box-shadow:
+    1.25rem -1.2rem 0 0.25rem var(--white),
+    2.65rem -0.75rem 0 -0.15rem var(--white);
+}
+
+.weather-rain {
+  position: absolute;
+  bottom: 0.25rem;
+  width: 0.35rem;
+  height: 1rem;
+  background: var(--forest);
+  border-radius: 999px;
+  transform: rotate(16deg);
+}
+
+.rain-one {
+  left: 2rem;
+}
+
+.rain-two {
+  left: 3.15rem;
+}
+
+.rain-three {
+  left: 4.3rem;
+}
+
+.weather-temp {
+  color: var(--forest);
+  font-size: 3.4rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.weather-location,
+.weather-description {
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.weather-description {
+  text-transform: capitalize;
+}
+
 .experience-section {
   background: var(--sky);
 }
@@ -355,6 +481,10 @@ textarea:focus {
   .info-grid,
   .experience-layout,
   .contact-section {
+    grid-template-columns: 1fr;
+  }
+
+  .weather-card {
     grid-template-columns: 1fr;
   }
 }
