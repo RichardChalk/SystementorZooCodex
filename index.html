@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Systementor Zoo</title>
-    <link rel="stylesheet" href="styles.css?v=weather-1" />
+    <link rel="stylesheet" href="styles.css?v=actions-1" />
   </head>
   <body>
     <header class="site-header">
@@ -59,31 +59,35 @@
 
         <aside class="weather-card" aria-labelledby="weather-title">
           <div class="weather-copy">
-            <p class="eyebrow">Today's park weather</p>
-            <h3 id="weather-title">Plan for Stockholm</h3>
-            <p id="weatherStatus">Live weather appears here when your OpenWeatherMap API key is added.</p>
+            <p class="eyebrow">Park forecast</p>
+            <h3 id="weather-title">Plan the next three days</h3>
+            <p id="weatherStatus">Forecast loading for Stockholm.</p>
           </div>
 
-          <div class="weather-display" aria-live="polite">
-            <div class="weather-icon-wrap">
-              <img
-                class="weather-icon"
-                id="weatherIcon"
-                src=""
-                alt=""
-                hidden
-              />
-              <div class="weather-symbol" id="weatherSymbol" aria-hidden="true">
-                <span class="weather-sun"></span>
-                <span class="weather-cloud"></span>
-                <span class="weather-rain rain-one"></span>
-                <span class="weather-rain rain-two"></span>
-                <span class="weather-rain rain-three"></span>
-              </div>
-            </div>
-            <p class="weather-temp" id="weatherTemp">--&deg;C</p>
-            <p class="weather-location" id="weatherLocation">Stockholm</p>
-            <p class="weather-description" id="weatherDescription">Weather loading soon</p>
+          <div class="forecast-grid" id="forecastGrid" aria-live="polite">
+            <article class="forecast-card">
+              <p class="forecast-label">Today</p>
+              <img class="forecast-icon" src="" alt="" hidden />
+              <p class="forecast-temp">--&deg;C</p>
+              <p class="forecast-date">Today</p>
+              <p class="forecast-description">Loading</p>
+            </article>
+
+            <article class="forecast-card">
+              <p class="forecast-label">Tomorrow</p>
+              <img class="forecast-icon" src="" alt="" hidden />
+              <p class="forecast-temp">--&deg;C</p>
+              <p class="forecast-date">Tomorrow</p>
+              <p class="forecast-description">Loading</p>
+            </article>
+
+            <article class="forecast-card">
+              <p class="forecast-label">Day after</p>
+              <img class="forecast-icon" src="" alt="" hidden />
+              <p class="forecast-temp">--&deg;C</p>
+              <p class="forecast-date">Day after</p>
+              <p class="forecast-description">Loading</p>
+            </article>
           </div>
         </aside>
       </section>
@@ -196,6 +200,6 @@
       <p>&copy; 2026 Systementor Zoo. Learn more about nature, one visit at a time.</p>
     </footer>
 
-    <script src="script.js?v=weather-1"></script>
+    <script src="script.js?v=actions-1"></script>
   </body>
 </html>

@@ -232,7 +232,7 @@ h3 {
 
 .weather-card {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(230px, 300px);
+  grid-template-columns: minmax(240px, 0.75fr) minmax(0, 1.4fr);
   gap: clamp(1.25rem, 4vw, 2.5rem);
   align-items: center;
   margin-top: 1.25rem;
@@ -247,7 +247,7 @@ h3 {
 
 .weather-copy h3,
 .weather-copy p,
-.weather-display p {
+.forecast-card p {
   margin-bottom: 0;
 }
 
@@ -266,93 +266,55 @@ h3 {
   color: rgba(255, 255, 255, 0.84);
 }
 
-.weather-display {
+.forecast-grid {
   display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.forecast-card {
+  display: grid;
+  min-height: 245px;
   justify-items: center;
-  padding: 1.2rem;
+  align-content: start;
+  gap: 0.35rem;
+  padding: 1.1rem 0.9rem;
   color: var(--forest);
   background: var(--cream);
   border-radius: 8px;
+  text-align: center;
 }
 
-.weather-icon-wrap {
-  position: relative;
-  width: 6.5rem;
-  height: 5.5rem;
-  margin-bottom: 0.5rem;
+.forecast-label {
+  justify-self: start;
+  padding: 0.2rem 0.55rem;
+  color: var(--white);
+  background: var(--coral);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 800;
 }
 
-.weather-icon {
-  width: 100%;
-  height: 100%;
+.forecast-icon {
+  width: 5.6rem;
+  height: 5.6rem;
   object-fit: contain;
 }
 
-.weather-symbol {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.weather-sun {
-  position: absolute;
-  top: 0.2rem;
-  right: 0.45rem;
-  width: 2.8rem;
-  height: 2.8rem;
-  background: var(--coral);
-  border-radius: 50%;
-}
-
-.weather-cloud {
-  position: absolute;
-  left: 0.6rem;
-  bottom: 1.45rem;
-  width: 4.75rem;
-  height: 2.2rem;
-  background: var(--white);
-  border-radius: 999px;
-  box-shadow:
-    1.25rem -1.2rem 0 0.25rem var(--white),
-    2.65rem -0.75rem 0 -0.15rem var(--white);
-}
-
-.weather-rain {
-  position: absolute;
-  bottom: 0.25rem;
-  width: 0.35rem;
-  height: 1rem;
-  background: var(--forest);
-  border-radius: 999px;
-  transform: rotate(16deg);
-}
-
-.rain-one {
-  left: 2rem;
-}
-
-.rain-two {
-  left: 3.15rem;
-}
-
-.rain-three {
-  left: 4.3rem;
-}
-
-.weather-temp {
+.forecast-temp {
   color: var(--forest);
-  font-size: 3.4rem;
+  font-size: 2.8rem;
   font-weight: 800;
   line-height: 1;
 }
 
-.weather-location,
-.weather-description {
+.forecast-date,
+.forecast-description {
   color: var(--muted);
   font-weight: 800;
 }
 
-.weather-description {
+.forecast-description {
   text-transform: capitalize;
 }
 
@@ -485,6 +447,10 @@ textarea:focus {
   }
 
   .weather-card {
+    grid-template-columns: 1fr;
+  }
+
+  .forecast-grid {
     grid-template-columns: 1fr;
   }
 }

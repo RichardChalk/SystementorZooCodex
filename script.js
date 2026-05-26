@@ -1,16 +1,9 @@
-const OPENWEATHER_API_KEY = "YOUR_OPENWEATHERMAP_API_KEY";
-const WEATHER_LATITUDE = 59.3293;
-const WEATHER_LONGITUDE = 18.0686;
 const WEATHER_CITY = "Stockholm";
 
 const contactForm = document.querySelector("#contactForm");
 const formStatus = document.querySelector("#formStatus");
 const weatherStatus = document.querySelector("#weatherStatus");
-const weatherIcon = document.querySelector("#weatherIcon");
-const weatherSymbol = document.querySelector("#weatherSymbol");
-const weatherTemp = document.querySelector("#weatherTemp");
-const weatherLocation = document.querySelector("#weatherLocation");
-const weatherDescription = document.querySelector("#weatherDescription");
+const forecastCards = document.querySelectorAll(".forecast-card");
 
 contactForm.addEventListener("submit", function () {
   formStatus.textContent = "Sending your message...";
@@ -20,45 +13,42 @@ function showWeatherMessage(message) {
   weatherStatus.textContent = message;
 }
 
-function updateWeatherCard(weatherData) {
-  const temperature = Math.round(weatherData.main.temp);
-  const description = weatherData.weather[0].description;
-  const iconCode = weatherData.weather[0].icon;
+function updateForecastCards(weatherData) {
+  weatherData.forecasts.forEach(function (forecastDay, index) {
+    const card = forecastCards[index];
 
-  weatherTemp.innerHTML = `${temperature}&deg;C`;
-  weatherLocation.textContent = weatherData.name || WEATHER_CITY;
-  weatherDescription.textContent = description;
-  weatherIcon.src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
-  weatherIcon.alt = description;
-  weatherIcon.hidden = false;
-  weatherSymbol.hidden = true;
-  showWeatherMessage("Current conditions from OpenWeatherMap.");
+    if (!card) {
+      return;
+    }
+
+    card.querySelector(".forecast-label").textContent = forecastDay.label;
+    card.querySelector(".forecast-date").textContent = forecastDay.date;
+    card.querySelector(".forecast-temp").innerHTML = `${forecastDay.temperature}&deg;C`;
+    card.querySelector(".forecast-description").textContent = forecastDay.description;
+
+    const icon = card.querySelector(".forecast-icon");
+    icon.src = `https://openweathermap.org/img/wn/${forecastDay.icon}@2x.png`;
+    icon.alt = forecastDay.description;
+    icon.hidden = false;
+  });
+
+  showWeatherMessage(`Three-day forecast for ${weatherData.city || WEATHER_CITY}.`);
 }
 
 async function loadWeather() {
-  if (OPENWEATHER_API_KEY === "YOUR_OPENWEATHERMAP_API_KEY") {
-    showWeatherMessage("Add your OpenWeatherMap API key in script.js to show live weather.");
-    return;
-  }
-
-  const weatherUrl =
-    "https://api.openweathermap.org/data/2.5/weather" +
-    `?lat=${WEATHER_LATITUDE}` +
-    `&lon=${WEATHER_LONGITUDE}` +
-    "&units=metric" +
-    `&appid=${OPENWEATHER_API_KEY}`;
-
   try {
-    const response = await fetch(weatherUrl);
+    const response = await fetch(`weather.json?v=${Date.now()}`);
 
     if (!response.ok) {
-      throw new Error("Weather request failed");
+      throw new Error("Weather file was not found");
     }
 
     const weatherData = await response.json();
-    updateWeatherCard(weatherData);
+    updateForecastCards(weatherData);
   } catch (error) {
-    showWeatherMessage("Weather is unavailable right now. Please check again later.");
+    showWeatherMessage(
+      "The forecast is unavailable right now. Please check again later."
+    );
   }
 }
 
