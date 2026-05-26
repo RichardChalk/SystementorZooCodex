@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Systementor Zoo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#top" aria-label="Systementor Zoo home">
+        <span class="logo-mark">SZ</span>
+        <span>Systementor Zoo</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#visit">Visit</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-overlay">
+          <p class="eyebrow">Open daily in the heart of learning</p>
+          <h1 id="hero-title">Systementor Zoo</h1>
+          <p class="hero-text">
+            A welcoming zoo for curious families, school groups, and anyone who wants
+            a closer look at wildlife, conservation, and nature.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary-button" href="#contact">Plan Your Visit</a>
+            <a class="button secondary-button" href="#experiences">Explore Highlights</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="visit-section" id="visit" aria-labelledby="visit-title">
+        <div class="section-heading">
+          <p class="eyebrow">Your day at the zoo</p>
+          <h2 id="visit-title">Easy to visit, full of discoveries</h2>
+        </div>
+
+        <div class="info-grid">
+          <article class="info-card">
+            <h3>Opening Hours</h3>
+            <p>Monday to Sunday, 09:00 to 18:00. Last entry is one hour before closing.</p>
+          </article>
+          <article class="info-card">
+            <h3>Tickets</h3>
+            <p>Adults from 180 SEK, children from 95 SEK, and guided school visits by request.</p>
+          </article>
+          <article class="info-card">
+            <h3>Location</h3>
+            <p>Green paths, calm rest areas, and clear signs make the park simple to explore.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="experience-section" id="experiences" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <p class="eyebrow">Highlights</p>
+          <h2 id="experience-title">Meet, learn, and slow down</h2>
+        </div>
+
+        <div class="experience-layout">
+          <article>
+            <span class="tag">Guided Walks</span>
+            <h3>Daily keeper talks</h3>
+            <p>
+              Join friendly guides for short talks about animal care, habitats, and
+              conservation projects supported by Systementor Zoo.
+            </p>
+          </article>
+
+          <article>
+            <span class="tag">Families</span>
+            <h3>Explorer trail</h3>
+            <p>
+              Follow a gentle walking route with activity stations, quiz stops, and
+              plenty of places to pause for snacks or photos.
+            </p>
+          </article>
+
+          <article>
+            <span class="tag">Schools</span>
+            <h3>Learning visits</h3>
+            <p>
+              Teachers can book age-friendly sessions about ecosystems, biodiversity,
+              and how small choices protect wild places.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-copy">
+          <p class="eyebrow">Get in touch</p>
+          <h2 id="contact-title">Contact Systementor Zoo</h2>
+          <p>
+            Ask about tickets, group visits, accessibility, or learning programs.
+            We usually reply within one working day.
+          </p>
+          <ul class="contact-list" aria-label="Zoo contact details">
+            <li><strong>Email:</strong> hello@systementorzoo.se</li>
+            <li><strong>Phone:</strong> +46 8 123 45 67</li>
+            <li><strong>Address:</strong> Parkvagen 12, Stockholm</li>
+          </ul>
+        </div>
+
+        <form
+          class="contact-form"
+          id="contactForm"
+          action="https://formsubmit.co/468885a99bfdcd49011ec0b1d5ff67fb"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="New message from Systementor Zoo" />
+          <input type="hidden" name="_template" value="table" />
+          <input
+            type="hidden"
+            name="_autoresponse"
+            value="Thank you for contacting Systementor Zoo. We received your message and will reply soon."
+          />
+          <input class="hidden-field" type="text" name="_honey" tabindex="-1" autocomplete="off" />
+
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+
+          <div class="form-row">
+            <label for="visitType">Visit type</label>
+            <select id="visitType" name="visit_type" required>
+              <option value="">Choose one</option>
+              <option value="Family visit">Family visit</option>
+              <option value="School group">School group</option>
+              <option value="Company event">Company event</option>
+              <option value="Other question">Other question</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="How can we help?"
+              required
+            ></textarea>
+          </div>
+
+          <button class="button primary-button" type="submit">Send Message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Systementor Zoo. Learn more about nature, one visit at a time.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
