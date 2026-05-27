@@ -541,6 +541,111 @@ h3 {
   border-radius: 8px;
 }
 
+.capybara-wave {
+  grid-column: 1 / -1;
+  justify-self: center;
+  max-width: 340px;
+  margin-top: clamp(0.5rem, 2vw, 1rem);
+}
+
+.capybara-wave svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.capybara-shadow {
+  fill: rgba(33, 78, 52, 0.14);
+}
+
+.capybara-body,
+.capybara-head,
+.capybara-ear {
+  fill: #b77744;
+  stroke: #6c3f24;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.capybara-belly,
+.capybara-muzzle {
+  fill: #d79b63;
+  stroke: #6c3f24;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.capybara-inner-ear {
+  fill: #f0b87f;
+}
+
+.capybara-tail,
+.capybara-arm,
+.capybara-leg,
+.capybara-paw,
+.capybara-smile,
+.capybara-cheek {
+  fill: none;
+  stroke: #6c3f24;
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.capybara-eye,
+.capybara-nose {
+  fill: #2d241c;
+}
+
+.capybara-arm {
+  transform-origin: 238px 136px;
+  animation: capybara-wave 2.4s ease-in-out infinite;
+}
+
+.capybara-paw {
+  transform-origin: 268px 76px;
+  animation: capybara-wave-paw 2.4s ease-in-out infinite;
+}
+
+@keyframes capybara-wave {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  45% {
+    transform: rotate(-8deg);
+  }
+
+  70% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes capybara-wave-paw {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  45% {
+    transform: rotate(-13deg);
+  }
+
+  70% {
+    transform: rotate(8deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .capybara-arm,
+  .capybara-paw {
+    animation: none;
+  }
+}
+
 .contact-form {
   display: grid;
   gap: 1rem;
