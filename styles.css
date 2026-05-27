@@ -755,11 +755,29 @@ h3 {
 
 .experience-layout article {
   position: relative;
-  overflow: hidden;
+  isolation: isolate;
+  overflow: visible;
   min-height: 240px;
-  padding: 1.5rem;
-  background: var(--white);
-  border: 1px solid rgba(33, 78, 52, 0.08);
+  padding: 2rem 1.7rem 1.65rem;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.blob-shape {
+  position: absolute;
+  inset: -0.45rem -0.35rem -0.35rem;
+  z-index: -1;
+  width: calc(100% + 0.7rem);
+  height: calc(100% + 0.8rem);
+  overflow: visible;
+  filter: drop-shadow(0 18px 32px rgba(18, 42, 29, 0.14));
+}
+
+.blob-shape path {
+  fill: var(--white);
+  stroke: rgba(33, 78, 52, 0.08);
+  stroke-width: 2;
 }
 
 .card-paw {
