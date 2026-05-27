@@ -553,8 +553,8 @@ h3 {
 .animal-card {
   position: relative;
   isolation: isolate;
-  min-height: 300px;
-  padding: 1.45rem 1.45rem 1.35rem;
+  min-height: 370px;
+  padding: 1.9rem 2rem 1.85rem;
   background: transparent;
   box-shadow: none;
 }
@@ -571,9 +571,9 @@ h3 {
 
 .animal-picture {
   display: block;
-  width: min(120px, 48%);
-  height: 120px;
-  margin-bottom: 0.75rem;
+  width: min(180px, 58%);
+  height: 180px;
+  margin: -0.45rem 0 0.85rem;
   filter: drop-shadow(0 10px 14px rgba(33, 78, 52, 0.12));
 }
 
@@ -587,6 +587,7 @@ h3 {
 
 .animal-card p {
   margin-bottom: 0;
+  max-width: 92%;
   color: var(--muted);
 }
 
@@ -1237,6 +1238,12 @@ textarea:focus {
 
   .animal-card {
     padding: 1.35rem 1.25rem 1.25rem;
+  }
+
+  .animal-picture {
+    width: min(150px, 56%);
+    height: 150px;
+    margin-top: -0.25rem;
   }
 
   .compact-heading h3 {
