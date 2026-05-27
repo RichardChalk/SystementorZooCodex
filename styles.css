@@ -470,6 +470,7 @@ h3 {
 }
 
 .info-card {
+  overflow: hidden;
   min-height: 180px;
   padding: 1.4rem;
   background: var(--white);
@@ -478,17 +479,17 @@ h3 {
 
 .info-card:nth-child(1),
 .experience-layout article:nth-child(1) {
-  border-radius: 24px 14px 30px 18px / 18px 28px 16px 26px;
+  border-radius: 15% 7% 18% 9% / 22% 11% 25% 14%;
 }
 
 .info-card:nth-child(2),
 .experience-layout article:nth-child(2) {
-  border-radius: 16px 28px 18px 30px / 26px 16px 30px 18px;
+  border-radius: 8% 17% 9% 18% / 18% 24% 13% 27%;
 }
 
 .info-card:nth-child(3),
 .experience-layout article:nth-child(3) {
-  border-radius: 30px 18px 24px 14px / 16px 30px 18px 28px;
+  border-radius: 18% 9% 15% 7% / 13% 27% 16% 24%;
 }
 
 .card-heading {
@@ -754,6 +755,7 @@ h3 {
 
 .experience-layout article {
   position: relative;
+  overflow: hidden;
   min-height: 240px;
   padding: 1.5rem;
   background: var(--white);
