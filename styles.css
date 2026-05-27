@@ -758,7 +758,7 @@ h3 {
   isolation: isolate;
   overflow: visible;
   min-height: 240px;
-  padding: 2rem 1.7rem 1.65rem;
+  padding: 2.65rem 2.1rem 1.85rem;
   background: transparent;
   border: 0;
   box-shadow: none;
@@ -782,8 +782,8 @@ h3 {
 
 .card-paw {
   position: absolute;
-  top: 1.35rem;
-  right: 1.35rem;
+  top: 2.25rem;
+  right: 2.35rem;
   width: 1.9rem;
   height: 1.6rem;
   opacity: 0.72;
@@ -804,7 +804,7 @@ h3 {
 
 .tag {
   display: inline-block;
-  margin-bottom: 1.1rem;
+  margin-bottom: 0.9rem;
   padding: 0.25rem 0.65rem;
   color: var(--white);
   background: var(--coral);
@@ -1160,6 +1160,15 @@ textarea:focus {
   .info-card,
   .experience-layout article {
     padding: 1.1rem;
+  }
+
+  .experience-layout article {
+    padding: 2.25rem 1.5rem 1.65rem;
+  }
+
+  .card-paw {
+    top: 1.8rem;
+    right: 1.7rem;
   }
 
   .contact-lion {
