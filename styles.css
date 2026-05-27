@@ -454,7 +454,8 @@ h3 {
 }
 
 .info-grid,
-.experience-layout {
+.experience-layout,
+.animal-grid {
   display: grid;
   gap: 1rem;
 }
@@ -464,6 +465,7 @@ h3 {
 }
 
 .info-card,
+.animal-card,
 .experience-layout article,
 .contact-form {
   box-shadow: var(--shadow);
@@ -524,6 +526,68 @@ h3 {
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 2;
+}
+
+.animal-preview {
+  margin-top: clamp(2.25rem, 5vw, 3.5rem);
+}
+
+.compact-heading {
+  margin-bottom: 1.2rem;
+}
+
+.compact-heading h3 {
+  max-width: 680px;
+  font-size: 2.55rem;
+}
+
+.compact-heading p:not(.eyebrow) {
+  max-width: 620px;
+}
+
+.animal-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem 1rem;
+}
+
+.animal-card {
+  position: relative;
+  isolation: isolate;
+  min-height: 300px;
+  padding: 1.45rem 1.45rem 1.35rem;
+  background: transparent;
+  box-shadow: none;
+}
+
+.animal-card .blob-shape {
+  inset: -0.35rem;
+  width: calc(100% + 0.7rem);
+  height: calc(100% + 0.7rem);
+}
+
+.animal-card .blob-shape path {
+  fill: var(--white);
+}
+
+.animal-picture {
+  display: block;
+  width: min(120px, 48%);
+  height: 120px;
+  margin-bottom: 0.75rem;
+  filter: drop-shadow(0 10px 14px rgba(33, 78, 52, 0.12));
+}
+
+.animal-card h4 {
+  margin: 0 0 0.35rem;
+  color: var(--forest);
+  font-family: "Baloo 2", "Nunito", Arial, Helvetica, sans-serif;
+  font-size: 1.45rem;
+  line-height: 1;
+}
+
+.animal-card p {
+  margin-bottom: 0;
+  color: var(--muted);
 }
 
 .weather-card {
@@ -1058,12 +1122,14 @@ textarea:focus {
   }
 
   .info-grid,
+  .animal-grid,
   .experience-layout,
   .contact-section {
     grid-template-columns: 1fr;
   }
 
   .info-card,
+  .animal-card,
   .experience-layout article {
     min-height: auto;
   }
@@ -1079,6 +1145,10 @@ textarea:focus {
 
   .forecast-grid {
     grid-template-columns: 1fr;
+  }
+
+  .animal-grid {
+    gap: 0.9rem;
   }
 
   .forecast-card {
@@ -1160,8 +1230,17 @@ textarea:focus {
   }
 
   .info-card,
+  .animal-card,
   .experience-layout article {
     padding: 1.1rem;
+  }
+
+  .animal-card {
+    padding: 1.35rem 1.25rem 1.25rem;
+  }
+
+  .compact-heading h3 {
+    font-size: 2rem;
   }
 
   .experience-layout article {
