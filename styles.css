@@ -532,8 +532,17 @@ h3 {
   margin-top: clamp(2.25rem, 5vw, 3.5rem);
 }
 
+.animal-intro-row {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.95fr) minmax(320px, 0.8fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
+  justify-content: space-around;
+  margin: clamp(2rem, 5vw, 3.6rem) auto clamp(2.4rem, 5vw, 4rem);
+}
+
 .compact-heading {
-  margin-bottom: 1.2rem;
+  margin-bottom: 0;
 }
 
 .compact-heading h3 {
@@ -557,9 +566,10 @@ h3 {
   grid-template-columns: auto minmax(0, 1fr);
   gap: 0.9rem 1.05rem;
   align-items: center;
-  max-width: 760px;
+  width: min(100%, 620px);
   min-height: 140px;
-  margin: 0 0 1.35rem;
+  justify-self: center;
+  margin: 0;
   padding: 1.45rem 1.8rem;
   color: var(--forest);
 }
@@ -1189,6 +1199,7 @@ textarea:focus {
 
   .info-grid,
   .animal-grid,
+  .animal-intro-row,
   .experience-layout,
   .contact-section {
     grid-template-columns: 1fr;
@@ -1217,7 +1228,13 @@ textarea:focus {
     gap: 0.9rem;
   }
 
+  .animal-intro-row {
+    gap: 1.6rem;
+    margin: 2rem auto 2.5rem;
+  }
+
   .zoo-challenge {
+    justify-self: stretch;
     min-height: auto;
     padding: 1.25rem 1.35rem;
   }
