@@ -4,7 +4,6 @@ const translations = {
   en: {
     languageFlagClass: "flag-sv",
     languageButtonLabel: "Byt till svenska",
-    navHome: "Home",
     navVisit: "Visit",
     navExperiences: "Experiences",
     navContact: "Contact",
@@ -90,7 +89,6 @@ const translations = {
   sv: {
     languageFlagClass: "flag-en",
     languageButtonLabel: "Switch to English",
-    navHome: "Hem",
     navVisit: "Besök",
     navExperiences: "Upplevelser",
     navContact: "Kontakt",
