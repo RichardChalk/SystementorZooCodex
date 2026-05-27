@@ -156,6 +156,29 @@ const weatherDescriptions = {
   },
 };
 
+const weatherAdvice = {
+  en: {
+    rain: "Rain boots ready",
+    storm: "Indoor talks first",
+    snow: "Warm boots today",
+    cold: "Bring a hoodie",
+    warm: "Great picnic day",
+    clear: "Sun hat time",
+    clouds: "Great walking day",
+    default: "Explorer bag ready",
+  },
+  sv: {
+    rain: "Regnstövlar redo",
+    storm: "Inomhus först",
+    snow: "Varma skor idag",
+    cold: "Ta med hoodie",
+    warm: "Perfekt picknickdag",
+    clear: "Dags för solhatt",
+    clouds: "Bra promenaddag",
+    default: "Utforskarväskan redo",
+  },
+};
+
 const dateWords = {
   sv: {
     Mon: "Mån",
@@ -220,6 +243,41 @@ function showWeatherMessage(messageKey) {
 
 function translateDescription(description) {
   return weatherDescriptions[currentLanguage]?.[description] || description;
+}
+
+function getForecastAdvice(forecastDay) {
+  const description = forecastDay.description.toLowerCase();
+  const advice = weatherAdvice[currentLanguage];
+
+  if (description.includes("rain") || description.includes("drizzle")) {
+    return advice.rain;
+  }
+
+  if (description.includes("thunder")) {
+    return advice.storm;
+  }
+
+  if (description.includes("snow")) {
+    return advice.snow;
+  }
+
+  if (forecastDay.temperature <= 14) {
+    return advice.cold;
+  }
+
+  if (forecastDay.temperature >= 16) {
+    return advice.warm;
+  }
+
+  if (description.includes("clear")) {
+    return advice.clear;
+  }
+
+  if (description.includes("cloud")) {
+    return advice.clouds;
+  }
+
+  return advice.default;
 }
 
 function translateDate(dateText) {
@@ -288,6 +346,7 @@ function updateForecastCards(weatherData) {
     card.querySelector(".forecast-date").textContent = translateDate(forecastDay.date);
     card.querySelector(".forecast-temp").innerHTML = `${forecastDay.temperature}&deg;C`;
     card.querySelector(".forecast-description").textContent = description;
+    card.querySelector(".forecast-advice").textContent = getForecastAdvice(forecastDay);
 
     const icon = card.querySelector(".forecast-icon");
     icon.src = `https://openweathermap.org/img/wn/${forecastDay.icon}@2x.png`;

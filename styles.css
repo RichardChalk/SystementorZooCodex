@@ -561,13 +561,24 @@ h3 {
 }
 
 .forecast-date,
-.forecast-description {
+.forecast-description,
+.forecast-advice {
   color: var(--muted);
   font-weight: 800;
 }
 
 .forecast-description {
   text-transform: capitalize;
+}
+
+.forecast-advice {
+  margin-top: 0.35rem;
+  padding: 0.28rem 0.65rem;
+  color: var(--forest);
+  background: rgba(245, 184, 75, 0.2);
+  border-radius: 999px;
+  font-size: 0.86rem;
+  line-height: 1.25;
 }
 
 .experience-section {
@@ -969,7 +980,7 @@ textarea:focus {
   }
 
   .forecast-icon {
-    grid-row: span 3;
+    grid-row: span 4;
     width: 4.8rem;
     height: 4.8rem;
   }
