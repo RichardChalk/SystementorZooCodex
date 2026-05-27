@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=nav-1" />
+    <link rel="stylesheet" href="styles.css?v=icons-1" />
   </head>
   <body>
     <header class="site-header">
@@ -59,15 +59,40 @@
 
         <div class="info-grid">
           <article class="info-card">
-            <h3 data-i18n="hoursTitle">When We Are Open</h3>
+            <div class="card-heading">
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <circle cx="12" cy="12" r="9"></circle>
+                  <path d="M12 7v5l3 2"></path>
+                </svg>
+              </span>
+              <h3 data-i18n="hoursTitle">When We Are Open</h3>
+            </div>
             <p data-i18n="hoursText">Monday to Sunday, 09:00 to 18:00. Last entry is one hour before closing.</p>
           </article>
           <article class="info-card">
-            <h3 data-i18n="ticketsTitle">Tickets for Explorers</h3>
+            <div class="card-heading">
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <path d="M4 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2a2 2 0 0 0 0-4Z"></path>
+                  <path d="M9 9h6"></path>
+                  <path d="M9 15h6"></path>
+                </svg>
+              </span>
+              <h3 data-i18n="ticketsTitle">Tickets for Explorers</h3>
+            </div>
             <p data-i18n="ticketsText">Adults from 180 SEK, children from 95 SEK, and guided school visits by request.</p>
           </article>
           <article class="info-card">
-            <h3 data-i18n="locationTitle">Find Your Way</h3>
+            <div class="card-heading">
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <path d="M12 21s7-5.1 7-12a7 7 0 0 0-14 0c0 6.9 7 12 7 12Z"></path>
+                  <circle cx="12" cy="9" r="2.5"></circle>
+                </svg>
+              </span>
+              <h3 data-i18n="locationTitle">Find Your Way</h3>
+            </div>
             <p data-i18n="locationText">Green paths, calm rest areas, and clear signs make the park simple to explore.</p>
           </article>
         </div>
@@ -152,9 +177,32 @@
             We usually reply within one working day.
           </p>
           <ul class="contact-list" aria-label="Zoo contact details">
-            <li><strong data-i18n="emailLabel">Email:</strong> hello@systementorzoo.se</li>
-            <li><strong data-i18n="phoneLabel">Phone:</strong> +46 8 123 45 67</li>
-            <li><strong data-i18n="addressLabel">Address:</strong> Parkvagen 12, Stockholm</li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <path d="M4 6h16v12H4Z"></path>
+                  <path d="m4 8 8 5 8-5"></path>
+                </svg>
+              </span>
+              <span><strong data-i18n="emailLabel">Email:</strong> hello@systementorzoo.se</span>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <path d="M6.6 3.8 9 3l2 5-1.7 1.1a11 11 0 0 0 5.6 5.6L16 13l5 2-0.8 2.4c-.3.9-1.1 1.5-2.1 1.4A16 16 0 0 1 5.2 5.9c-.1-1 .5-1.8 1.4-2.1Z"></path>
+                </svg>
+              </span>
+              <span><strong data-i18n="phoneLabel">Phone:</strong> +46 8 123 45 67</span>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <path d="M12 21s7-5.1 7-12a7 7 0 0 0-14 0c0 6.9 7 12 7 12Z"></path>
+                  <circle cx="12" cy="9" r="2.5"></circle>
+                </svg>
+              </span>
+              <span><strong data-i18n="addressLabel">Address:</strong> Parkvagen 12, Stockholm</span>
+            </li>
           </ul>
         </div>
 
