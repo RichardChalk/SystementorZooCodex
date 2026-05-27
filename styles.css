@@ -36,6 +36,13 @@ button {
   font: inherit;
 }
 
+.svg-sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -72,10 +79,47 @@ button {
   width: 2.25rem;
   height: 2.25rem;
   place-items: center;
-  color: var(--white);
-  background: var(--forest);
+  background: var(--sun);
   border-radius: 8px;
-  font-size: 0.85rem;
+}
+
+.logo-mark svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.lion-mane {
+  fill: #f5a83e;
+}
+
+.lion-ear {
+  fill: #f5a83e;
+}
+
+.lion-inner-ear {
+  fill: #ffd071;
+}
+
+.lion-face {
+  fill: #ffd071;
+}
+
+.lion-eye,
+.lion-nose {
+  fill: #3f2a18;
+}
+
+.lion-muzzle {
+  fill: #fff4cf;
+}
+
+.lion-mouth,
+.lion-whiskers {
+  fill: none;
+  stroke: #3f2a18;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .main-nav {
@@ -541,109 +585,22 @@ h3 {
   border-radius: 8px;
 }
 
-.capybara-wave {
-  grid-column: 1 / -1;
-  justify-self: center;
-  max-width: 340px;
-  margin-top: clamp(0.5rem, 2vw, 1rem);
+.contact-lion {
+  display: grid;
+  min-height: 250px;
+  margin-top: clamp(1.3rem, 4vw, 2rem);
+  place-items: center;
+  background:
+    radial-gradient(circle at 50% 48%, rgba(245, 184, 75, 0.18), transparent 58%),
+    rgba(217, 236, 242, 0.42);
+  border: 1px solid rgba(63, 143, 95, 0.16);
+  border-radius: 8px;
 }
 
-.capybara-wave svg {
-  display: block;
-  width: 100%;
+.contact-lion svg {
+  width: min(260px, 70%);
   height: auto;
-}
-
-.capybara-shadow {
-  fill: rgba(33, 78, 52, 0.14);
-}
-
-.capybara-body,
-.capybara-head,
-.capybara-ear {
-  fill: #b77744;
-  stroke: #6c3f24;
-  stroke-width: 6;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.capybara-belly,
-.capybara-muzzle {
-  fill: #d79b63;
-  stroke: #6c3f24;
-  stroke-width: 5;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.capybara-inner-ear {
-  fill: #f0b87f;
-}
-
-.capybara-tail,
-.capybara-arm,
-.capybara-leg,
-.capybara-paw,
-.capybara-smile,
-.capybara-cheek {
-  fill: none;
-  stroke: #6c3f24;
-  stroke-width: 7;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.capybara-eye,
-.capybara-nose {
-  fill: #2d241c;
-}
-
-.capybara-arm {
-  transform-origin: 238px 136px;
-  animation: capybara-wave 2.4s ease-in-out infinite;
-}
-
-.capybara-paw {
-  transform-origin: 268px 76px;
-  animation: capybara-wave-paw 2.4s ease-in-out infinite;
-}
-
-@keyframes capybara-wave {
-  0%,
-  100% {
-    transform: rotate(0deg);
-  }
-
-  45% {
-    transform: rotate(-8deg);
-  }
-
-  70% {
-    transform: rotate(5deg);
-  }
-}
-
-@keyframes capybara-wave-paw {
-  0%,
-  100% {
-    transform: rotate(0deg);
-  }
-
-  45% {
-    transform: rotate(-13deg);
-  }
-
-  70% {
-    transform: rotate(8deg);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .capybara-arm,
-  .capybara-paw {
-    animation: none;
-  }
+  filter: drop-shadow(0 14px 20px rgba(33, 78, 52, 0.16));
 }
 
 .contact-form {

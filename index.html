@@ -10,12 +10,33 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=capybara-1" />
+    <link rel="stylesheet" href="styles.css?v=lion-1" />
   </head>
   <body>
+    <svg class="svg-sprite" aria-hidden="true" focusable="false">
+      <symbol id="lion-head-icon" viewBox="0 0 120 120">
+        <circle class="lion-mane" cx="60" cy="60" r="52"></circle>
+        <circle class="lion-ear" cx="27" cy="37" r="14"></circle>
+        <circle class="lion-ear" cx="93" cy="37" r="14"></circle>
+        <circle class="lion-inner-ear" cx="27" cy="38" r="7"></circle>
+        <circle class="lion-inner-ear" cx="93" cy="38" r="7"></circle>
+        <circle class="lion-face" cx="60" cy="63" r="39"></circle>
+        <circle class="lion-eye" cx="46" cy="56" r="4"></circle>
+        <circle class="lion-eye" cx="74" cy="56" r="4"></circle>
+        <path class="lion-muzzle" d="M45 74c4-8 13-11 15-3 2-8 11-5 15 3 3 9-3 18-15 18s-18-9-15-18Z"></path>
+        <path class="lion-nose" d="M53 69c4-5 10-5 14 0-3 5-11 5-14 0Z"></path>
+        <path class="lion-mouth" d="M60 75v7M60 82c-5 5-11 5-15 0M60 82c5 5 11 5 15 0"></path>
+        <path class="lion-whiskers" d="M41 73H25M42 81l-15 5M79 73h16M78 81l15 5"></path>
+      </symbol>
+    </svg>
+
     <header class="site-header">
       <a class="logo" href="#top" aria-label="Systementor Zoo home">
-        <span class="logo-mark">SZ</span>
+        <span class="logo-mark">
+          <svg viewBox="0 0 120 120" role="img" aria-label="Systementor Zoo lion logo">
+            <use href="#lion-head-icon"></use>
+          </svg>
+        </span>
         <span>Systementor Zoo</span>
       </a>
 
@@ -204,6 +225,12 @@
               <span><strong data-i18n="addressLabel">Address:</strong> Parkvagen 12, Stockholm</span>
             </li>
           </ul>
+
+          <div class="contact-lion" aria-hidden="true">
+            <svg viewBox="0 0 120 120" role="img">
+              <use href="#lion-head-icon"></use>
+            </svg>
+          </div>
         </div>
 
         <form
@@ -258,45 +285,6 @@
           <button class="button primary-button" type="submit" data-i18n="sendMessage">Send Message</button>
           <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
         </form>
-
-        <div class="capybara-wave" aria-hidden="true">
-          <svg viewBox="0 0 360 260" role="img">
-            <ellipse class="capybara-shadow" cx="184" cy="224" rx="112" ry="18"></ellipse>
-            <path
-              class="capybara-tail"
-              d="M252 150c21-12 43-7 53 9 7 11 2 24-11 29-15 6-33-4-43-20"
-            ></path>
-            <path
-              class="capybara-body"
-              d="M73 149c7-48 49-80 107-80 63 0 111 33 119 82 8 51-29 82-105 82H139c-43 0-73-34-66-84Z"
-            ></path>
-            <path
-              class="capybara-belly"
-              d="M102 183c15 20 40 31 76 31h42c33 0 57-8 70-24-18 30-48 43-93 43h-58c-25 0-45-19-37-50Z"
-            ></path>
-            <path
-              class="capybara-head"
-              d="M61 128c2-37 32-62 73-57 36 4 61 29 63 62 2 36-26 62-69 62-42 0-69-25-67-67Z"
-            ></path>
-            <circle class="capybara-ear" cx="98" cy="69" r="17"></circle>
-            <circle class="capybara-ear" cx="151" cy="74" r="16"></circle>
-            <circle class="capybara-inner-ear" cx="101" cy="72" r="8"></circle>
-            <circle class="capybara-inner-ear" cx="148" cy="77" r="7"></circle>
-            <ellipse class="capybara-muzzle" cx="87" cy="138" rx="32" ry="25"></ellipse>
-            <circle class="capybara-eye" cx="121" cy="119" r="5"></circle>
-            <circle class="capybara-eye" cx="161" cy="122" r="5"></circle>
-            <path class="capybara-nose" d="M74 132c8-7 22-6 29 2-8 8-21 8-29-2Z"></path>
-            <path class="capybara-smile" d="M94 151c11 10 29 10 40-1"></path>
-            <path class="capybara-leg" d="M121 214v22"></path>
-            <path class="capybara-leg" d="M238 214v22"></path>
-            <path
-              class="capybara-arm"
-              d="M235 135c26-10 38-32 34-61"
-            ></path>
-            <path class="capybara-paw" d="M262 76l-16-18M270 74l4-24M278 79l19-15"></path>
-            <path class="capybara-cheek" d="M138 143c10-5 22-5 31 1"></path>
-          </svg>
-        </div>
       </section>
     </main>
 
