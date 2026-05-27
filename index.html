@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=animals-2" />
+    <link rel="stylesheet" href="styles.css?v=animals-3" />
   </head>
   <body>
     <svg class="svg-sprite" aria-hidden="true" focusable="false">
@@ -180,12 +180,23 @@
                 <path d="M39 67C80 16 154 16 221 24c62 8 115 34 129 92 14 59-20 118-75 146-53 27-127 14-185 1-59-13-83-38-83-92 0-42 6-72 32-104Z"></path>
               </svg>
               <svg class="animal-picture" viewBox="0 0 120 120" aria-hidden="true">
-                <ellipse cx="60" cy="66" rx="46" ry="27" fill="var(--cream)" stroke="var(--ink)" stroke-width="4"></ellipse>
-                <path d="M30 47l14 42M52 40l12 52M75 40l-16 52M95 49 72 88" stroke="var(--ink)" stroke-width="7" stroke-linecap="round"></path>
-                <circle cx="95" cy="50" r="12" fill="var(--cream)" stroke="var(--ink)" stroke-width="4"></circle>
-                <circle cx="99" cy="47" r="2.5" fill="var(--ink)"></circle>
-                <path d="M34 86v19M51 89v18M68 89v18M84 86v19" stroke="var(--ink)" stroke-width="6" stroke-linecap="round"></path>
-                <path d="M28 105h13M45 107h13M62 107h13M78 105h13" stroke="var(--ink)" stroke-width="6" stroke-linecap="round"></path>
+                <defs>
+                  <clipPath id="zebra-body-clip">
+                    <ellipse cx="58" cy="65" rx="42" ry="25"></ellipse>
+                  </clipPath>
+                </defs>
+                <path d="M92 51c8-5 15-4 20 2" fill="none" stroke="var(--ink)" stroke-width="4" stroke-linecap="round"></path>
+                <ellipse cx="58" cy="65" rx="42" ry="25" fill="var(--cream)" stroke="var(--ink)" stroke-width="4"></ellipse>
+                <g clip-path="url(#zebra-body-clip)">
+                  <path d="M22 43l18 45M41 36l14 58M61 36l-8 58M78 40l-20 52M94 50 72 90" stroke="var(--ink)" stroke-width="6" stroke-linecap="round"></path>
+                </g>
+                <path d="M83 48c3-13 13-20 23-16 8 3 12 13 8 23l-7 17c-3 8-13 10-20 5l-9-7" fill="var(--cream)" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round"></path>
+                <path d="M92 34 89 20l10 10 9-8-1 14" fill="var(--cream)" stroke="var(--ink)" stroke-width="4" stroke-linejoin="round"></path>
+                <path d="M82 43c4-9 10-14 19-15" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"></path>
+                <path d="M92 54h14M88 64h14" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"></path>
+                <circle cx="103" cy="44" r="2.5" fill="var(--ink)"></circle>
+                <path d="M35 86v21M51 89v18M68 89v18M83 85v22" stroke="var(--ink)" stroke-width="6" stroke-linecap="round"></path>
+                <path d="M29 108h13M45 108h13M62 108h13M77 108h13" stroke="var(--ink)" stroke-width="6" stroke-linecap="round"></path>
               </svg>
               <h4 data-i18n="animalZebraName">Zebra</h4>
               <p data-i18n="animalZebraText">A striped runner whose bold coat makes every group look different.</p>
@@ -414,6 +425,6 @@
       <p data-i18n="footerText">&copy; 2026 Systementor Zoo. Big nature moments for curious minds.</p>
     </footer>
 
-    <script src="script.js?v=animals-2"></script>
+    <script src="script.js?v=animals-3"></script>
   </body>
 </html>
