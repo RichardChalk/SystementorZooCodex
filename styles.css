@@ -782,12 +782,14 @@ h3 {
 
 .card-paw {
   position: absolute;
-  top: 0.9rem;
-  right: 1rem;
-  width: 5.7rem;
-  height: 4.8rem;
+  top: 1.8rem;
+  right: 2.1rem;
+  width: 1.9rem;
+  height: 1.6rem;
   opacity: 0.38;
-  transform: rotate(14deg);
+  pointer-events: none;
+  transform: rotate(14deg) scale(3);
+  transform-origin: center;
 }
 
 .card-paw-leaf {
@@ -1167,10 +1169,11 @@ textarea:focus {
   }
 
   .card-paw {
-    top: 0.9rem;
-    right: 0.85rem;
-    width: 4.8rem;
-    height: 4rem;
+    top: 1.45rem;
+    right: 1.55rem;
+    width: 1.9rem;
+    height: 1.6rem;
+    transform: rotate(14deg) scale(2.35);
   }
 
   .contact-lion {
