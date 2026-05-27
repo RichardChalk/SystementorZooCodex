@@ -48,6 +48,7 @@ const translations = {
     contactTitle: "Ask Us About Your Zoo Day",
     contactText:
       "Ask about tickets, group visits, accessibility, or learning programs. We usually reply within one working day.",
+    lionSpeech: "Lots to do for the kids!",
     emailLabel: "Email:",
     phoneLabel: "Phone:",
     addressLabel: "Address:",
@@ -117,6 +118,7 @@ const translations = {
     contactTitle: "Fråga oss om din zoodag",
     contactText:
       "Fråga om biljetter, gruppbesök, tillgänglighet eller lärprogram. Vi svarar oftast inom en arbetsdag.",
+    lionSpeech: "Massor att göra för barnen!",
     emailLabel: "E-post:",
     phoneLabel: "Telefon:",
     addressLabel: "Adress:",
