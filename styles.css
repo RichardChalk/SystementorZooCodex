@@ -376,14 +376,6 @@ h3 {
   margin-bottom: 2rem;
 }
 
-.paw-trail {
-  display: flex;
-  gap: 0.85rem;
-  align-items: center;
-  margin-top: 0.35rem;
-  opacity: 0.72;
-}
-
 .paw-print {
   position: relative;
   display: block;
@@ -391,16 +383,6 @@ h3 {
   height: 1.05rem;
   color: var(--leaf);
   transform: rotate(-14deg);
-}
-
-.paw-print:nth-child(2) {
-  color: var(--coral);
-  transform: translateY(0.38rem) rotate(12deg);
-}
-
-.paw-print:nth-child(3) {
-  color: var(--sun);
-  transform: translateY(-0.06rem) rotate(-10deg);
 }
 
 .paw-print::before {
@@ -710,9 +692,32 @@ h3 {
 }
 
 .experience-layout article {
+  position: relative;
   min-height: 240px;
   padding: 1.5rem;
   background: var(--white);
+}
+
+.card-paw {
+  position: absolute;
+  top: 1.35rem;
+  right: 1.35rem;
+  width: 1.9rem;
+  height: 1.6rem;
+  opacity: 0.72;
+  transform: rotate(14deg);
+}
+
+.card-paw-leaf {
+  color: var(--leaf);
+}
+
+.card-paw-coral {
+  color: var(--coral);
+}
+
+.card-paw-sun {
+  color: var(--sun);
 }
 
 .tag {
