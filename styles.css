@@ -508,6 +508,12 @@ h3 {
 .forecast-icon {
   width: 5.6rem;
   height: 5.6rem;
+  padding: 0.35rem;
+  background:
+    linear-gradient(135deg, rgba(33, 78, 52, 0.2), rgba(63, 143, 95, 0.26)),
+    rgba(33, 78, 52, 0.14);
+  border: 1px solid rgba(33, 78, 52, 0.16);
+  border-radius: 8px;
   object-fit: contain;
 }
 
