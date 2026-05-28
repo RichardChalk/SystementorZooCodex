@@ -1,13 +1,13 @@
 {
   "city": "Stockholm",
-  "generatedAt": "2026-05-28T03:34:20.774Z",
+  "generatedAt": "2026-05-28T10:01:00.120Z",
   "forecasts": [
     {
       "label": "Today",
       "date": "Thu 28 May",
-      "temperature": 13,
-      "description": "few clouds",
-      "icon": "02d"
+      "temperature": 14,
+      "description": "clear sky",
+      "icon": "01d"
     },
     {
       "label": "Tomorrow",
@@ -19,7 +19,7 @@
     {
       "label": "Day after",
       "date": "Sat 30 May",
-      "temperature": 20,
+      "temperature": 18,
       "description": "overcast clouds",
       "icon": "04d"
     }
