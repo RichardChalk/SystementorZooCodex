@@ -1,24 +1,24 @@
 {
   "city": "Stockholm",
-  "generatedAt": "2026-06-04T20:05:38.158Z",
+  "generatedAt": "2026-06-04T22:21:10.325Z",
   "forecasts": [
     {
       "label": "Today",
-      "date": "Thu 4 Jun",
-      "temperature": 14,
-      "description": "overcast clouds",
-      "icon": "04n"
-    },
-    {
-      "label": "Tomorrow",
       "date": "Fri 5 Jun",
       "temperature": 20,
       "description": "overcast clouds",
       "icon": "04d"
     },
     {
-      "label": "Day after",
+      "label": "Tomorrow",
       "date": "Sat 6 Jun",
+      "temperature": 20,
+      "description": "overcast clouds",
+      "icon": "04d"
+    },
+    {
+      "label": "Day after",
+      "date": "Sun 7 Jun",
       "temperature": 20,
       "description": "overcast clouds",
       "icon": "04d"
