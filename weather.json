@@ -1,6 +1,6 @@
 {
   "city": "Stockholm",
-  "generatedAt": "2026-06-16T04:04:44.520Z",
+  "generatedAt": "2026-06-16T11:09:51.951Z",
   "forecasts": [
     {
       "label": "Today",
@@ -19,7 +19,7 @@
     {
       "label": "Day after",
       "date": "Thu 18 Jun",
-      "temperature": 18,
+      "temperature": 16,
       "description": "light rain",
       "icon": "10d"
     }
