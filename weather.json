@@ -1,11 +1,11 @@
 {
   "city": "Stockholm",
-  "generatedAt": "2026-06-20T22:06:01.338Z",
+  "generatedAt": "2026-06-21T04:10:35.822Z",
   "forecasts": [
     {
       "label": "Today",
       "date": "Sun 21 Jun",
-      "temperature": 24,
+      "temperature": 22,
       "description": "scattered clouds",
       "icon": "03d"
     },
