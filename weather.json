@@ -1,18 +1,18 @@
 {
   "city": "Stockholm",
-  "generatedAt": "2026-06-30T03:36:56.231Z",
+  "generatedAt": "2026-06-30T09:34:15.058Z",
   "forecasts": [
     {
       "label": "Today",
       "date": "Tue 30 Jun",
-      "temperature": 21,
-      "description": "scattered clouds",
-      "icon": "03d"
+      "temperature": 22,
+      "description": "overcast clouds",
+      "icon": "04d"
     },
     {
       "label": "Tomorrow",
       "date": "Wed 1 Jul",
-      "temperature": 22,
+      "temperature": 21,
       "description": "overcast clouds",
       "icon": "04d"
     },
@@ -20,8 +20,8 @@
       "label": "Day after",
       "date": "Thu 2 Jul",
       "temperature": 22,
-      "description": "scattered clouds",
-      "icon": "03d"
+      "description": "few clouds",
+      "icon": "02d"
     }
   ]
 }
