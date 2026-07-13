@@ -1,13 +1,13 @@
 {
   "city": "Stockholm",
-  "generatedAt": "2026-07-13T06:17:42.444Z",
+  "generatedAt": "2026-07-13T12:05:03.326Z",
   "forecasts": [
     {
       "label": "Today",
       "date": "Mon 13 Jul",
-      "temperature": 20,
-      "description": "few clouds",
-      "icon": "02d"
+      "temperature": 24,
+      "description": "clear sky",
+      "icon": "01d"
     },
     {
       "label": "Tomorrow",
@@ -20,8 +20,8 @@
       "label": "Day after",
       "date": "Wed 15 Jul",
       "temperature": 27,
-      "description": "scattered clouds",
-      "icon": "03d"
+      "description": "clear sky",
+      "icon": "01d"
     }
   ]
 }
