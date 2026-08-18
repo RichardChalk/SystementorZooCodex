@@ -1,13 +1,13 @@
 {
   "city": "Stockholm",
-  "generatedAt": "2026-08-18T09:31:24.461Z",
+  "generatedAt": "2026-08-18T12:42:25.098Z",
   "forecasts": [
     {
       "label": "Today",
       "date": "Tue 18 Aug",
-      "temperature": 19,
-      "description": "few clouds",
-      "icon": "02d"
+      "temperature": 20,
+      "description": "scattered clouds",
+      "icon": "03d"
     },
     {
       "label": "Tomorrow",
