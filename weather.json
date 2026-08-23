@@ -1,13 +1,13 @@
 {
   "city": "Stockholm",
-  "generatedAt": "2026-08-23T15:20:22.406Z",
+  "generatedAt": "2026-08-23T18:27:09.221Z",
   "forecasts": [
     {
       "label": "Today",
       "date": "Sun 23 Aug",
-      "temperature": 20,
+      "temperature": 17,
       "description": "overcast clouds",
-      "icon": "04d"
+      "icon": "04n"
     },
     {
       "label": "Tomorrow",
