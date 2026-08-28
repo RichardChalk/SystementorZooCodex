@@ -1,27 +1,27 @@
 {
   "city": "Stockholm",
-  "generatedAt": "2026-08-28T14:55:10.837Z",
+  "generatedAt": "2026-08-28T23:52:06.261Z",
   "forecasts": [
     {
       "label": "Today",
-      "date": "Fri 28 Aug",
-      "temperature": 21,
-      "description": "overcast clouds",
-      "icon": "04d"
-    },
-    {
-      "label": "Tomorrow",
       "date": "Sat 29 Aug",
-      "temperature": 16,
+      "temperature": 15,
       "description": "light rain",
       "icon": "10d"
     },
     {
-      "label": "Day after",
+      "label": "Tomorrow",
       "date": "Sun 30 Aug",
       "temperature": 20,
       "description": "clear sky",
       "icon": "01d"
+    },
+    {
+      "label": "Day after",
+      "date": "Mon 31 Aug",
+      "temperature": 19,
+      "description": "overcast clouds",
+      "icon": "04d"
     }
   ]
 }
