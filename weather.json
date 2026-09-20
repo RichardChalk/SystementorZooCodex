@@ -1,13 +1,13 @@
 {
   "city": "Stockholm",
-  "generatedAt": "2026-09-20T15:30:38.404Z",
+  "generatedAt": "2026-09-20T20:22:37.722Z",
   "forecasts": [
     {
       "label": "Today",
       "date": "Sun 20 Sept",
-      "temperature": 14,
-      "description": "few clouds",
-      "icon": "02n"
+      "temperature": 12,
+      "description": "clear sky",
+      "icon": "01n"
     },
     {
       "label": "Tomorrow",
@@ -19,7 +19,7 @@
     {
       "label": "Day after",
       "date": "Tue 22 Sept",
-      "temperature": 13,
+      "temperature": 14,
       "description": "few clouds",
       "icon": "02d"
     }
