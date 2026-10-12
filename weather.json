@@ -1,6 +1,6 @@
 {
   "city": "Stockholm",
-  "generatedAt": "2026-10-12T00:14:08.701Z",
+  "generatedAt": "2026-10-12T10:16:42.066Z",
   "forecasts": [
     {
       "label": "Today",
@@ -13,13 +13,13 @@
       "label": "Tomorrow",
       "date": "Tue 13 Oct",
       "temperature": 8,
-      "description": "broken clouds",
-      "icon": "04d"
+      "description": "few clouds",
+      "icon": "02d"
     },
     {
       "label": "Day after",
       "date": "Wed 14 Oct",
-      "temperature": 8,
+      "temperature": 9,
       "description": "light rain",
       "icon": "10d"
     }
