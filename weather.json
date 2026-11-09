@@ -1,11 +1,11 @@
 {
   "city": "Stockholm",
-  "generatedAt": "2026-11-09T00:33:47.218Z",
+  "generatedAt": "2026-11-09T10:56:00.385Z",
   "forecasts": [
     {
       "label": "Today",
       "date": "Mon 9 Nov",
-      "temperature": 4,
+      "temperature": 5,
       "description": "broken clouds",
       "icon": "04d"
     },
@@ -19,7 +19,7 @@
     {
       "label": "Day after",
       "date": "Wed 11 Nov",
-      "temperature": 4,
+      "temperature": 5,
       "description": "light rain",
       "icon": "10d"
     }
