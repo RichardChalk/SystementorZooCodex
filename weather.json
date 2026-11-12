@@ -1,25 +1,25 @@
 {
   "city": "Stockholm",
-  "generatedAt": "2026-11-12T05:54:02.569Z",
+  "generatedAt": "2026-11-12T14:41:10.080Z",
   "forecasts": [
     {
       "label": "Today",
       "date": "Thu 12 Nov",
       "temperature": 5,
       "description": "light rain",
-      "icon": "10d"
+      "icon": "10n"
     },
     {
       "label": "Tomorrow",
       "date": "Fri 13 Nov",
       "temperature": 3,
-      "description": "light snow",
-      "icon": "13d"
+      "description": "light rain",
+      "icon": "10d"
     },
     {
       "label": "Day after",
       "date": "Sat 14 Nov",
-      "temperature": 1,
+      "temperature": 2,
       "description": "clear sky",
       "icon": "01d"
     }
