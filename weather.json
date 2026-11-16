@@ -1,27 +1,27 @@
 {
   "city": "Stockholm",
-  "generatedAt": "2026-11-15T18:30:14.648Z",
+  "generatedAt": "2026-11-16T00:46:16.323Z",
   "forecasts": [
     {
       "label": "Today",
-      "date": "Sun 15 Nov",
-      "temperature": 6,
-      "description": "scattered clouds",
-      "icon": "03n"
-    },
-    {
-      "label": "Tomorrow",
       "date": "Mon 16 Nov",
       "temperature": 5,
       "description": "light rain",
       "icon": "10d"
     },
     {
-      "label": "Day after",
+      "label": "Tomorrow",
       "date": "Tue 17 Nov",
-      "temperature": 4,
+      "temperature": 3,
       "description": "light rain",
       "icon": "10d"
+    },
+    {
+      "label": "Day after",
+      "date": "Wed 18 Nov",
+      "temperature": 0,
+      "description": "few clouds",
+      "icon": "02d"
     }
   ]
 }
