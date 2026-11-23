@@ -1,6 +1,6 @@
 {
   "city": "Stockholm",
-  "generatedAt": "2026-11-23T01:24:30.593Z",
+  "generatedAt": "2026-11-23T11:50:31.079Z",
   "forecasts": [
     {
       "label": "Today",
@@ -19,9 +19,9 @@
     {
       "label": "Day after",
       "date": "Wed 25 Nov",
-      "temperature": 0,
-      "description": "overcast clouds",
-      "icon": "04d"
+      "temperature": 1,
+      "description": "scattered clouds",
+      "icon": "03d"
     }
   ]
 }
