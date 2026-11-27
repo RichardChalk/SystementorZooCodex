@@ -1,13 +1,13 @@
 {
   "city": "Stockholm",
-  "generatedAt": "2026-11-27T03:34:35.208Z",
+  "generatedAt": "2026-11-27T16:12:51.028Z",
   "forecasts": [
     {
       "label": "Today",
       "date": "Fri 27 Nov",
-      "temperature": -2,
-      "description": "scattered clouds",
-      "icon": "03d"
+      "temperature": 0,
+      "description": "broken clouds",
+      "icon": "04n"
     },
     {
       "label": "Tomorrow",
